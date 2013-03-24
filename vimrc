@@ -36,13 +36,13 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+" set cursorline
 set ttyfast
-set ruler
+" set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set relativenumber
+"set relativenumber
 set undofile
 
 " Auto adjust window sizes when they become current
@@ -50,9 +50,10 @@ set winwidth=84
 set winheight=5
 set winminheight=5
 set winheight=999
+colorscheme krunktastic 
 
-colorscheme solarized
-set background=light " or dark
+"colorscheme solarized
+"set background=dark   "light or dark
 set t_Co=256
 
 set splitbelow splitright
@@ -72,9 +73,9 @@ set formatoptions=n
 
 " check to make sure vim has been compiled with colorcolumn support
 " before enabling it
-if exists("+colorcolumn")
-  set colorcolumn=80
-endif
+" if exists("+colorcolumn")
+ " set colorcolumn=80
+" endif
 
 "  ---------------------------------------------------------------------------
 "  Status Line
@@ -234,10 +235,11 @@ let NERDTreeShowBookmarks = 0
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
-let NERDTreeQuitOnOpen = 1
+let NERDTreeQuitOnOpen = 0
 let NERDTreeWinSize = 50 
 let NERDTreeChDirMode = 2
 let NERDTreeDirArrows = 1
+let NERDTreeMapOpenInTab='<ENTER>'
 " open file browser
 map <leader>p :NERDTreeToggle<cr>
 
